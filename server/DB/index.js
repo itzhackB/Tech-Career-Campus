@@ -1,6 +1,6 @@
-// const dotenv = require("dotenv");
-// dotenv.config();
-const dbConnection = process.env.dbConnection ;
+const dotenv = require("dotenv");
+dotenv.config();
+const dbConnection = "mongodb+srv://itzhack:nabava90@cluster0.7dufu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" ;
 const mongoose = require('mongoose')
 const chalk = require('chalk')
 const options = {
@@ -8,6 +8,7 @@ const options = {
     useUnifiedTopology: true,
     useFindAndModify: false
 }
+
 mongoose
     .connect(dbConnection, options)
     .then(() => {

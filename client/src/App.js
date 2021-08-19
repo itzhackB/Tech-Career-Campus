@@ -3,6 +3,7 @@ import Layout from './Components/Features/Layout/LayoutComponent';
 import MainRouting from './Routing/MainRouting';
 import backgroundImage from './images/tech-background.jpeg'
 import './App.css';
+import Login from './Components/Pages/Login/LoginComponent';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       backgroundRepeat: 'no-repeat',
     }}
     >
+      <Login/>
       <Router>
         <Layout >
           <MainRouting/>
